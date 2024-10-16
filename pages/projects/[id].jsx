@@ -29,7 +29,7 @@ function ProjectSingle(props) {
 					</div>
 				</div>
 			</div>
-
+			<a></a>
 			{/* Gallery */}
 			<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
 				{props.project.ProjectImages.map((project) => {
@@ -67,17 +67,13 @@ function ProjectSingle(props) {
 										>
 											<span>{info.title}: </span>
 											<a
-												href="https://stoman.me"
-												className={
-													info.title === 'Website' ||
-													info.title === 'Phone'
-														? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
-														: ''
-												}
-												aria-label="Project Website and Phone"
-											>
-												{info.details}
-											</a>
+                            href={`https://${info.details}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
+                        >
+                            {info.details}
+                        </a>
 										</li>
 									);
 								}

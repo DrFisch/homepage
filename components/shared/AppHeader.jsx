@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../public/images/logo-light.svg';
-import logoDark from '../../public/images/logo-dark.svg';
+import logoLight from '../../public/images/logo-light.webp';
+import logoDark from '../../public/images/logo-light.webp';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 
 function AppHeader() {
@@ -114,20 +114,20 @@ function AppHeader() {
 				>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
 						<Link href="/projects" aria-label="Projects">
-							Projects
+							Projekte
 						</Link>
 					</div>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/about" aria-label="About Me">
-							About Me
+							Über Mich
 						</Link>
 					</div>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/contact" aria-label="Contact">
-							Contact
+							Kontakt
 						</Link>
 					</div>
-					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+					{/* <div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
 							onClick={showHireMeModal}
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
@@ -135,7 +135,7 @@ function AppHeader() {
 						>
 							Hire Me
 						</button>
-					</div>
+					</div> */}
 				</div>
 
 				{/* Header links large screen */}
@@ -144,26 +144,26 @@ function AppHeader() {
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						<Link href="/projects">Projects</Link>
+						<Link href="/projects">Projekte</Link>
 					</div>
 					<div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="About Me"
 					>
-						<Link href="/about">About Me</Link>
+						<Link href="/about">Über Mich</Link>
 					</div>
 
 					<div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
-						<Link href="/contact">Contact</Link>
+						<Link href="/contact">Kontakt</Link>
 					</div>
 				</div>
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					<div className="hidden md:flex">
+					{/* <div className="hidden md:flex">
 						<button
 							onClick={showHireMeModal}
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
@@ -171,7 +171,7 @@ function AppHeader() {
 						>
 							Hire Me
 						</button>
-					</div>
+					</div> */}
 
 					{/* Theme switcher large screen */}
 					<div

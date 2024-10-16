@@ -9,7 +9,7 @@ export default function Home() {
 		<div className="container mx-auto">
 			<PagesMetaHead title="Home" />
 
-			<AppBanner />
+			
 
 			<ProjectsGrid />
 

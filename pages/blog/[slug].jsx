@@ -6,11 +6,11 @@ import html from 'remark-html';
 
 export default function Post({ post }) {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
-      <p className="text-gray-500 mb-6">{post.date}</p>
+    <div className="container mx-auto px-4 py-12 ">
+      <h1 className="text-4xl font-bold mb-6 text-black dark:text-white">{post.title}</h1>
+      <p className="text-gray-500 dark:text-gray-400 mb-6">{post.date}</p>
       <div
-        className="prose max-w-none"
+        className="prose max-w-none text-black dark:text-gray-300 prose-headings:text-black dark:prose-headings:text-white"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </div>

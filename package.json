@@ -6,16 +6,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "framer-motion": "^5.5.3",
+    "fs": "^0.0.1-security",
     "next": "^14.2.15",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-countup": "^6.1.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.3.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

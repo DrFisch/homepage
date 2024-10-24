@@ -138,7 +138,7 @@ export const projectsData = [
 	{
 		id: 2,
 		title: 'Spo Blog',
-		url: 'budget-tracker-54473.web.app',
+		url: 'https://blog-next-js-rose.vercel.app/',
 		category: 'Blog',
 		img: '/images/mobile-project-2.jpg',
 		ProjectHeader: {
@@ -209,7 +209,7 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'Link: budget-tracker-54473.web.app',
+						'Link: https://blog-next-js-rose.vercel.app/',
 				},
 				{
 					id: uuidv4(),

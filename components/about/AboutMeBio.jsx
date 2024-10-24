@@ -5,7 +5,7 @@ import { aboutMeData } from '../../data/aboutMeData';
 function AboutMeBio() {
 	const [aboutMe, setAboutMe] = useState(aboutMeData);
 	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+		<div className="min-h-[40vh] block sm:flex sm:gap-10 mt-10 sm:mt-20">
 			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
 				<Image
 					src="/images/profile.jpeg"

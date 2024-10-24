@@ -179,7 +179,7 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					title: 'Website',
-					details: 'budget-tracker-54473.web.app',
+					details: 'blog-next-js-rose.vercel.app/',
 				},
 				// {
 				// 	id: uuidv4(),
